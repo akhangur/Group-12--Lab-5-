@@ -1,0 +1,42 @@
+.fetch>input[name="collapse"] {
+    display: none;
+}
+
+.fetch .content {
+    background: #fff;
+    overflow: hidden;
+    height: 0;
+}
+
+.fetch>input[name="collapse"]:checked~.content {
+    height: 390px;
+    transition: height 0.4s;
+}
+
+.fetch label {
+    display: block;
+}
+
+.fetch .handle {
+    margin: 1;
+    font-size: 18px;
+}
+
+.fetch label {
+    color: #fff;
+    cursor: pointer;
+    background: #b0100c;
+    user-select: none;
+}
+
+.fetch label:hover,
+.fetch label:focus {
+    background: #252525;
+}
+
+.fetch .handle label:before {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: 0.4s;
+}
